@@ -41,8 +41,8 @@ Expo - это фреймворк React Native, которая делает ра�
     <ThemedView style={styles.heroSection}>
        <AnimatedIcon />
        <ThemedText type="title" style={styles.title}>
-           Welcome to&nbsp;Expo
-           Hello World!
+           Welcome to&nbsp;Expo // до
+           Hello World! // после
        </ThemedText>
      </ThemedView>
 
