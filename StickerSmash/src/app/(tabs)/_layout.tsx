@@ -12,13 +12,12 @@ export default function TabLayout() {
             backgroundColor: '#25292e',
         },
         headerShadowVisible: false,
-        headerTintColor: '#fff',
+        headerTintColor: '#ebe9f3',
         tabBarStyle: {
             backgroundColor: '#25292e',
         },
     }}
     >
-
       <Tabs.Screen
         name="index"
         options={{
@@ -32,6 +31,14 @@ export default function TabLayout() {
         name="about"
         options={{
           title: 'About',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+          ),
+        }}
+      /><Tabs.Screen
+        name="datetime"
+        options={{
+          title: 'Current date',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
           ),
