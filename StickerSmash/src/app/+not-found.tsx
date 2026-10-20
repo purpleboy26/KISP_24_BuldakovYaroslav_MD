@@ -4,10 +4,10 @@ import { Link, Stack } from 'expo-router';
 export default function NotFoundScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Oops! Not Found' }} />
+      <Stack.Screen options={{ title: "You're not supposed to be here" }} />
       <View style={styles.container}>
         <Link href="/" style={styles.button}>
-          Go back to Home screen!
+          Home screen
         </Link>
       </View>
     </>
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    fontSize: 20,
+    fontSize: 60,
     textDecorationLine: 'underline',
     color: '#fff',
   },
